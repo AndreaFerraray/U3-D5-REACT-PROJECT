@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
-function MovieCard({ src, alt }) {
+function MovieCard(props) {
+  console.log(props);
   return (
     <div className="container-fluid px-4" style={{ backgroundColor: "#221f1f" }}>
       <div className="d-flex justify-content-between">
@@ -39,64 +40,64 @@ function MovieCard({ src, alt }) {
       <h4 className="text-white">Trending Now</h4>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 no-gutters text-center">
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/1.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/2.png" alt="movie className" />
+          <img className="img-fluid" src={props.imageSrc} alt="movie className" />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/3.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/4.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/5.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/6.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
       </div>
       <h4 className="text-white">Watch it Again</h4>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4 no-gutters text-center">
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/7.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/8.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/9.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/10.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/11.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/12.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
       </div>
       <h4 className="text-white">New Releases</h4>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-0 no-gutters text-center">
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/13.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/14.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/15.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/16.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/17.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
         <div className="col mb-2 px-1">
-          <img className="img-fluid" src="assets/18.png" alt="movie " />
+          <img className="img-fluid" src={props.imageSrc} alt="movie " />
         </div>
       </div>
     </div>
